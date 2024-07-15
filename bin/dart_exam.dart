@@ -1,28 +1,16 @@
 void main() {
-  // var numbers = [1, 2, 3, 4, 5];
-  List<int> numbers = [1, 2, 3, 4, 5];
-  // numbers.add('안녕'); // 타입불일치로 안됨
-  numbers.add(6);
-  print(numbers.first); // 리스트 첫번 째 요소 반환
-  print(numbers.last); // 리스트 마지막 요소 반환
-  print(numbers.isEmpty); // 비어있는지 확인
-  print(numbers.contains(3)); // 해당 값이 존재하는지 확인
+  /*
+  var name = '홍길동';
+  // 문자열 출력 방법 $
+  var introduce = '안녕하세요. 제 이름은 $name 입니다.';
+  */
 
-  /* collectio if */
-
-  var giveMeFive = true;
-  List<int> nums = [
-    1,
-    2,
-    3,
-    4,
-    // if(giveMeFive) 5
-  ];
-
-  // 같은 의미
-  if(giveMeFive) {
-    nums.add(5);
-  }
-
-  print(nums);
+  var name = '홍길동';
+  var age = 20;
+  var introduce = '안녕하세요. 제 이름은 $name이고, 나이는 $age살 입니다.';
+  print(introduce);
+  
+  // ${age + 2} --> 무언가를 계산하고 싶을 때 사용
+  introduce = '안녕하세요. 제 이름은 \'$name\'이고, 나이는 ${age + 2}살 입니다.';
+  print(introduce);
 }
