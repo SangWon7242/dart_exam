@@ -1,9 +1,9 @@
 void main() {
-  // late 수식어
-  late final String name;
-  print(name); // 값이 할당 되어 있지 않기 때문에 해당 변수 사용불가
-  /*
-  1. late는 변수의 값을 초기 선언 없이도 변수를 생성해줌
-  2. API에서 받아와야 하는 데이터를 담을 때 보통 사용
-  */
+  // const : compile-time constant를 만들어줌
+
+  const name = '홍길동';
+  // const라 하면 해당 값이 컴파일이 될 때 그 값을 알고 있음
+  // const API = 'API-KEY'
+  // 단 API에서 받아오는 값은 final로 선언
+  // 앱스토어에 올리기 전에 값을 알고 있어야 함
 }
