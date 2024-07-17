@@ -1,28 +1,12 @@
 void main() {
-  // var는 따로 데이터 타입을 명시할 필요 없음
-  // 해당 변수의 타입은
-  // Map<String, Object> 이다.
-  var player = {
-    'nickname' : 'condezero',
-    'ap': 80,
-    'dp': 78.8
-  };
+  // var numbers = {1, 2, 3, 4, 5};
+  // set은 모든 요소가 유니크 함
+  // List의 경우 []를 사용
+  // 유니크할 필요가 없으면 List 사용하면 된다.
+  Set<int> numbers = {1, 2, 3, 4, 5};
+  numbers.add(1);
+  numbers.add(1);
+  numbers.add(1);
 
-  // 해당 value를 String을 바꾸면 타입은
-  // Map<String, String> 이 된다.
-
-  Map<String, Object> datum = {};
-
-  List<Map<String, Object>> players = [
-    {
-      'name':'홍길동',
-      'level':78
-    },
-    {
-      'name':'홍길동',
-      'level':55
-    },
-  ];
-
-  print(players);
+  print(numbers);
 }
