@@ -1,12 +1,20 @@
-void main() {
-  // var numbers = {1, 2, 3, 4, 5};
-  // set은 모든 요소가 유니크 함
-  // List의 경우 []를 사용
-  // 유니크할 필요가 없으면 List 사용하면 된다.
-  Set<int> numbers = {1, 2, 3, 4, 5};
-  numbers.add(1);
-  numbers.add(1);
-  numbers.add(1);
+/*
+void sayHello(String name) {
+  print("안녕하세요. 내 이름은 $name 입니다.");
+}
+*/
 
-  print(numbers);
+/*
+String sayHello(String name) {
+  return "안녕하세요. 내 이름은 $name 입니다.";
+}
+*/
+
+String sayHello(String name) => "안녕하세요. 내 이름은 $name 입니다.";
+
+num plus(num a, num b) => a + b;
+
+
+void main() {
+  print(sayHello('홍길동'));
 }
